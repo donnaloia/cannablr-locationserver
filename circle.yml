@@ -12,5 +12,5 @@ deployment:
   hub:
     branch: master
     commands:
-      - docker login -u $dockeruser -p $dockerpassword
+      - docker login -e $dockeremail -u $dockeruser -p $dockerpassword
       - docker push bendonnaloia/cannablr-locationserver
