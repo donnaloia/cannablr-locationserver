@@ -5,6 +5,9 @@ dependencies:
   override:
     - docker info
     - docker build --rm=false -t bendonnaloia/cannablr-locationserver:latest .
+test:
+  override:
+    - echo "skipping tests"
 deployment:
   hub:
     branch: master
