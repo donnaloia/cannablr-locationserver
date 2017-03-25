@@ -31,3 +31,8 @@ def showzippy(request):
 	else:
 		context = {'zipcodes': 'we dont have any'}
 		return render(request, 'test.html', context)
+
+@csrf_exempt
+def status(request):
+	status_message = "Service is running"
+	return HttpResponse(status_message)
